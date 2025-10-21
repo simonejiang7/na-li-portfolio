@@ -1,1 +1,7 @@
 _merge: deep
+admin:
+  cms:
+    decapcms:
+      backend:
+        name: github
+        repo: simonejiang7/na-li-portfolio
