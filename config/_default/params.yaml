@@ -9,3 +9,5 @@ admin:
       backend:
         name: github
         repo: simonejiang7/na-li-portfolio
+        branch: main
+        site_domain: auto

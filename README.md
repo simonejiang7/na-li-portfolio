@@ -1,8 +1,70 @@
-![Twitter banner](https://user-images.githubusercontent.com/4457294/208064328-5bbf40e4-5520-41f4-8024-30c898c1a0e8.png)
+# Na Li Portfolio
 
-# Hugolify template
+A Hugo-based portfolio website built with the Hugolify template, optimized for Netlify deployment with CMS editing capabilities.
 
-Is a Github template for build easily a fast, accessible friendly and low carbon website!
+## Features
+
+- **Fast & Accessible**: Built with Hugo for optimal performance
+- **CMS Integration**: Edit content directly through Netlify's admin interface
+- **Responsive Design**: Mobile-friendly and modern UI
+- **SEO Optimized**: Built-in SEO features and meta tags
+- **Low Carbon**: Optimized for minimal environmental impact
+
+## Deployment on Netlify
+
+### Automatic Deployment
+
+1. **Connect to Netlify**:
+   - Go to [Netlify](https://netlify.com)
+   - Click "New site from Git"
+   - Connect your GitHub account
+   - Select this repository: `simonejiang7/na-li-portfolio`
+
+2. **Build Settings** (should be auto-detected):
+   - Build command: `yarn build`
+   - Publish directory: `public`
+   - Hugo version: `0.146.4`
+
+3. **Deploy**:
+   - Click "Deploy site"
+   - Your site will be available at `https://your-site-name.netlify.app`
+
+### Content Management
+
+1. **Access Admin Panel**:
+   - Visit `https://your-site-name.netlify.app/admin/`
+   - Sign up/Login with Netlify Identity
+
+2. **Edit Content**:
+   - Pages: Edit home page, contact page, etc.
+   - Site Settings: Update SEO, menus, banner settings
+   - Legal Pages: Manage privacy policy and legal mentions
+
+3. **Media Management**:
+   - Upload images through the CMS
+   - Images are stored in `static/assets/images/`
+
+## Local Development
+
+```bash
+# Install dependencies
+yarn install
+
+# Start development server
+yarn watch
+
+# Build for production
+yarn build
+```
+
+## CMS Configuration
+
+The CMS is configured to edit:
+- **Pages**: Home, Contact, Legal pages
+- **Site Settings**: SEO, menus, banner
+- **Media**: Images and assets
+
+All changes are automatically committed to the GitHub repository and trigger a new deployment.
 
 ## Live demos
 
