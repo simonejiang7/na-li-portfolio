@@ -1,7 +1,11 @@
-_merge: deep
-# admin:
-#   cms:
-#     decapcms:
-#       backend:
-#         name: github
-#         repo: simonejiang7/na-li-portfolio
+admin:
+  # 1. Turn OFF the deprecated Netlify Identity
+  auth:
+    netlify_identity: false
+
+  # 2. Define the backend as Decap expects it
+  cms:
+    decapcms:
+      backend:
+        name: github
+        repo: simonejiang7/na-li-portfolio
