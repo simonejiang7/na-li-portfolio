@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Na Li Portfolio - Admin</title>
+</head>
+<body>
+  <h1>🎉 Admin Panel is Working!</h1>
+  <p>This page loads successfully. Now setting up CMS...</p>
+  
+  <div id="cms-loading">Loading CMS...</div>
+  
+  <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+  <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
+  
+  <script>
+    console.log('✅ Admin page loaded successfully');
+    
+    // Test if scripts loaded
+    setTimeout(() => {
+      if (window.netlifyIdentity) {
+        console.log('✅ Netlify Identity loaded');
+        document.getElementById('cms-loading').innerHTML = '✅ Netlify Identity loaded - Ready for login!';
+      } else {
+        console.log('❌ Netlify Identity failed to load');
+        document.getElementById('cms-loading').innerHTML = '❌ Netlify Identity failed to load';
+      }
+      
+      if (window.CMS) {
+        console.log('✅ Decap CMS loaded');
+        document.getElementById('cms-loading').innerHTML += '<br>✅ Decap CMS loaded - Ready to edit!';
+      } else {
+        console.log('❌ Decap CMS failed to load');
+        document.getElementById('cms-loading').innerHTML += '<br>❌ Decap CMS failed to load';
+      }
+    }, 2000);
+  </script>
+</body>
+</html>
