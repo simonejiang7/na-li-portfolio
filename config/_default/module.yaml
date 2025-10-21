@@ -5,5 +5,5 @@ imports:
   # Core theme
   - path: github.com/hugolify/hugolify-theme
 
-  # CMS
-  - path: github.com/hugolify/hugolify-admin
+  # CMS - temporarily disabled
+  # - path: github.com/hugolify/hugolify-admin

@@ -1,4 +1,4 @@
-module github.com/hugolify/hugolify-template
+module github.com/simonejiang7/na-li-portfolio
 
 go 1.21
 
